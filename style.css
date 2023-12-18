@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    height: 200vh;
+}
+
+.header{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-color: #ffffff;
+    padding: 0.75rem 10rem;
+}
+
+.header .navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar .site-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .vertical-line{
+    display: flex;
+    align-items: center;
+    width: 1px;
+    height: 20px;
+    background: #e0e0e0;
+    margin: 0 1.5rem 0 3rem;
+}
+
+.navbar .nav-links{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar .nav-links > li{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 1em 2px;
+    margin-right: 0.25rem;
+    align-items: center;
+    text-align: center;
+    height: 72px;
+    width: 104px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    
+}
+
+
+.nav-links .bus-ticket-link{
+    fill: #ffffff;
+    background-color:#d84e55;
+    color:#ffffff;
+    border-radius: 0.50em;
+}
+
+.nav-links .bus-ticket-link:hover{
+    cursor: pointer;
+}
+
+.nav-links .cab-link, .nav-links .train-link{
+    fill: #1d1d1d;
+    color:#1d1d1d;
+}
+
+.nav-links .cab-link img, .nav-links .train-link img{
+    filter: brightness(0) grayscale(1);
+}
+
+
+.nav-links .cab-link:hover, .nav-links .train-link:hover{
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-radius: 0.50em;
+}
+
+
+.nav-links .bus-ticket-link img {
+    filter: brightness(0) invert(1);
+    
+}
+
+.nav-links .cab-link:hover img,
+.nav-links .train-link:hover img {
+    filter: none; 
+}
+
+
+.nav-links > img{
+    width: 5.25rem;
+    height: 1.25rem;
+    padding: 50px;
+}
+
+.nav-links > li > img {
+    margin-bottom: 0.5rem; 
+}
+
+.navbar .secondary-links{
+    display: flex;
+    margin-left: 23rem;
+    align-items: center;
+    gap: 2.25rem;
+}
+
+.navbar .secondary-links > li{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    color: #4a4a4a;
+    gap: 7px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 7px;    
+}
+
+.navbar .secondary-links  li:hover{
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-radius: 0.25em;
+}
+
+.hero-section{
+    display: flex;
+    background: url(https://st.redbus.in/Images/HomeIndia/HeroImageV2_C.png);
+    height: 32rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #d84e55;
+    justify-content: center;
+}
+
+.hero-section .hero-section-container{
+    display: flex;
+    max-width: 1400px;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.hero-section-container .hero-heading{
+    display: flex;
+    color: #ffffff;
+    font-size: 2rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section-container .travel-search-container{
+    display: flex;
+    position: relative;
+    height: 7rem;
+    background-color: #ffffff;
+    width: 70%;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    gap: 1rem;
+}
+
+.travel-search-container:hover{
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+    
+}
+
+.travel-search-container .left-travel-search{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-travel-search .left-search-one{
+    height: 100%;
+    width: 50%;
+    border-right: 1px solid #E0E0E0;
+}
+
+.left-search-one .left-from-wrapper{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1.75rem;
+}
+
+.left-from-wrapper > input{
+    outline:none;
+    border:none;
+}
+
+.left-from-wrapper > input::placeholder{
+    color: #1d1d1d;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.left-travel-search .from-to-arrow{
+    display: grid;
+    place-content: center;
+    position: absolute;
+    border: 1px solid #E0E0E0;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    color:#797B79;
+    background-color: #ffffff;
+}
+
+.left-travel-search .left-search-two{
+    height: 100%;
+    width: 50%;
+    border-right: 1px solid #E0E0E0;
+    
+}
+
+.left-search-two .left-to-wrapper{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1.75rem 2rem 2.2rem;
+}
+
+.left-to-wrapper > input{
+    outline:none;
+    border:none;
+}
+
+.left-to-wrapper > input::placeholder{
+    color: #1d1d1d;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.travel-search-container .right-travel-search{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    background-color: #ffffff;
+
+}
+
+.right-travel-search .right-search-one{
+    height: 100%;
+    width: 50%;
+    border-right: 1px solid #E0E0E0;
+}
+
+.right-search-one .right-date-wrapper{
+    padding: 2rem 1.75rem 2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+    position: relative;
+}
+
+.right-date-wrapper > input{
+    outline:none;
+    border:none;
+}
+
+.right-date-wrapper > input::placeholder{
+    color: #1d1d1d;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.right-travel-search .right-search-btn{
+    padding: 2rem 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: #ffffff;
+    width: 50%;
+    font-weight: 700;
+    background-color:#d84e55;
+    font-size: 1.25rem;
+    border: none;
+
+}
